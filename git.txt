@@ -1,0 +1,35 @@
+git clean -fd
+git status
+git fetch --all
+git branch -r | grep feature/19.3.0_Epic_App_Orchard_Int
+git log
+git checkout feature/19.3.0_Epic_App_Orchard_Int
+git branch
+git pull origin feature/19.3.0_Epic_App_Orchard_Int
+git commit -o file_path1 file_path2
+git push origin feature/19.3.0_Epic_App_Orchard_Int
+git rm - f file_name1
+git reset --soft `git merge-base feature/VPTL-9551-Epic_Interconnect_API_Header VPTL-9651-audit-log-the-notification-messages-in-api_usage-table`
+
+git log -t 
+
+git stash pop
+how to change existing commit
+go to git gui
+*. select ammend previous changes
+*. Remove these two changes from gui (just click on file name)
+*. Do git diff --filepath--
+*. Now make changes and commit it from gui
+
+now 
+git checkout filename  (it will pull latest file from there)
+now make changes 
+git commit through gui 
+git push origin branchname ( git push -f origin feature/VPTL-9707-backend-changes-for-creating-the-test-url)
+
+------------
+https://bitbucket.vidyo.com/projects/POR/repos/portal/commits/ed7611d226b5fa453b5b8c43e593806977650fb5
+Backend for Join Url with Junit
+-------------
+(feature/VPTL-9707-backend-changes-for-creating-the-test-url)
+
